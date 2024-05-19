@@ -13,7 +13,7 @@ request(url, function (error, response, body) {
   let count = 0;
   films.forEach((film) => {
     const filteredCharacters = film.characters.filter((character) =>
-      character.includes('18')
+      character.includes('0')
     );
     if (filteredCharacters.length > 0) {
       count++;
