@@ -1,4 +1,5 @@
 #!/usr/bin/node
+/* eslint-disable no-unused-vars */
 const { count } = require('console');
 const request = require('request');
 
