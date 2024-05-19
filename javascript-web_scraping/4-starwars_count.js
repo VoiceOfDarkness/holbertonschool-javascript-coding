@@ -2,7 +2,7 @@
 const { count } = require('console');
 const request = require('request');
 
-const url = 'https://swapi-api.hbtn.io/api/films/';
+const url = process.argv[2];
 
 request(url, function (error, response, body) {
   if (error) {
@@ -13,7 +13,7 @@ request(url, function (error, response, body) {
   let count = 0;
   films.forEach((film) => {
     const filteredCharacters = film.characters.filter((character) =>
-      character.includes('0')
+      character.includes('18')
     );
     if (filteredCharacters.length > 0) {
       count++;
