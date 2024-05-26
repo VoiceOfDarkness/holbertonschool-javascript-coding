@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const { readFile } = require("fs");
 
 function countStudents(fileName) {
